@@ -1,0 +1,34 @@
+.popup_type_login {
+    background-color: #000;
+    position: static;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.popup__form_login {
+    background-color: #000;
+}
+
+.popup__form-title_login {
+    text-align: center;
+    color: #FFF;
+}
+
+.popup__input-container_login {
+    padding-bottom: 162px;
+}
+
+.popup__input_login {
+    border-bottom: 2px solid #CCCCCC;
+    color: #FFF;
+}
+
+.popup__close-button_login {
+    visibility: hidden;
+}
+
+.popup__button_login {
+    background-color: #FFF;
+    color: #000;
+    margin-top: 216px;
+}
