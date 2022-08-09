@@ -1,0 +1,68 @@
+.register {
+    height: 100vh;
+    background-color: #000;
+}
+
+.popup_type_register {
+    background-color: #000;
+    position: static;
+    height: max-content;
+    justify-content: flex-start;
+}
+
+.popup__form_register {
+    background-color: #000;
+}
+
+.popup__form-title_register {
+    text-align: center;
+    color: #FFF;
+}
+
+.popup__input-container_register {
+    padding-bottom: 162px;
+    color: #FFF;
+}
+
+.popup__input_register {
+    color: #FFF;
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.popup__close-button_register {
+    visibility: hidden;
+}
+
+.popup__button_register {
+    background-color: #FFF;
+    color: #000;
+    margin-bottom: 18px;
+}
+
+.register__signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.register__signin p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+.register__login-link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
