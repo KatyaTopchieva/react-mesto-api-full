@@ -85,6 +85,7 @@ class Api {
   export const api = new Api({
     baseUrl: 'https://api.etopchieva.students.nomoredomains.sbs',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      "Authorization" : `Bearer ${localStorage.getItem('token')}`
     }
   });
