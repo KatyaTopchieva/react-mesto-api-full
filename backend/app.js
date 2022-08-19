@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(requestLogger);
 
-app.use('*', cors(corsConfig));
+// app.use('*', cors(corsConfig));
 
 app.get('/crash-test', () => {
   setTimeout(() => {
