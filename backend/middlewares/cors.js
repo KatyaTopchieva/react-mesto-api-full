@@ -7,6 +7,6 @@ module.exports.corsConfig = {
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
   preflightContinue: false,
   optionsSuccessStatus: 204,
-  allowedHeaders: ['Content-Type', 'Origin', 'Referer', 'Accept', 'Authorization'],
+  allowedHeaders: ['Content-Type', 'Origin', 'Referer', 'Accept', 'Authorization', 'Access-Control-Allow-Credentials', 'Access-Control-Allow-Origin'],
   credentials: true,
 };

@@ -56,3 +56,4 @@ export const authorize = (email, password) => {
     .then(res => res.json())
     .then(data => data)
   }
+  
