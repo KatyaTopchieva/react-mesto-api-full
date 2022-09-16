@@ -60,6 +60,7 @@ class App extends React.Component{
   authorize = (email, password, finish) => {
     auth.authorize(email, password)
       .then((data) => {
+        api.headersRefresh();
         finish(data);
       })
       .catch(e => {
@@ -85,7 +86,7 @@ class App extends React.Component{
   handleTokenCheck = () => {
     if (localStorage.getItem('token')){
     const jwt = localStorage.getItem('token');
-    // проверяем токен пользователя
+   
     return auth.checkToken(jwt)
     .then((res) => {
       if (res){
@@ -163,7 +164,7 @@ handleRouteExit = () => {
   handleUpdateUser = (name, about, finish) => {
     api.editProfile(name, about)
       .then(value => {
-        this.setState( {currentUser: value} );
+        this.setState( {currentUser: value.data} );
         finish();
       })
       .catch((err)=>{
@@ -179,7 +180,7 @@ handleRouteExit = () => {
 
     api.editAvatar(avatar)
       .then(value => {
-        this.setState( {currentUser: value} );
+        this.setState( {currentUser: value.data} );
         finish();
       })
       .catch((err)=>{
@@ -228,7 +229,7 @@ loadData() {
         const res = values[0];
         const userId = res._id;
         this.handleRefreshUser(res); 
-        const cards = values[1];
+        const cards = values[1].data;
         this.setCards(cards);        
       })  
   .catch((err)=>{
@@ -249,7 +250,7 @@ handlerAddCard = (name, link, finish) =>{
 
  api.addCard(name, link)
     .then((newCard) => {
-        this.setCards([newCard, ...this.state.cards]); 
+        this.setCards([newCard.data, ...this.state.cards]); 
         finish();
     })
     .catch((err)=>{

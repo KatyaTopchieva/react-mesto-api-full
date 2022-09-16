@@ -8,12 +8,12 @@ class Card extends React.Component {
 
         this.state = {
             isLiked: '', 
-            likesCount: this.props.likes.length
+            likesCount: this.props.likes?.length
         }
     }
 
     componentDidMount(){
-        const isLiked = this.props.likes.some(i => i._id === this.context._id)
+        const isLiked = this.props.likes?.some(i => i === this.context._id)
         this.setState({isLiked: isLiked});
     }
 

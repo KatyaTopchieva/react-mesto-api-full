@@ -80,10 +80,18 @@ class Api {
        })
        .then(res => this._checkResponse(res))
     }
+
+    headersRefresh(){
+      this._headers = {
+        'Content-Type': 'application/json',
+        "Authorization" : `Bearer ${localStorage.getItem('token')}`
+      };
+    }
   }
   
   export const api = new Api({
-    baseUrl: 'https://api.etopchieva.students.nomoredomains.sbs',
+    // baseUrl: 'https://api.etopchieva.students.nomoredomains.sbs',
+    baseUrl: 'http://localhost:3000',
     headers: {
       'Content-Type': 'application/json',
       "Authorization" : `Bearer ${localStorage.getItem('token')}`

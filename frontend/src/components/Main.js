@@ -31,7 +31,7 @@ class Main extends React.Component {
                 id = {card._id}
                 name = {card.name}
                 link = {card.link}
-                ownerId = {card.owner._id}
+                ownerId = {card.owner}
                 likes = {card.likes}
                 handleCardClick = {this.props.handleCardClick}
                 onCardDelete = {this.props.handleCardDelete}
