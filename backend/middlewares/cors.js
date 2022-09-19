@@ -12,8 +12,8 @@
 //   credentials: true,
 // };
 const allowedCors = [
-  'https://etopchieva.students.nomoredomains.sbs',
-  'http://etopchieva.students.nomoredomains.sbs',
+  'https://max.etopchieva.students.nomoredomains.sbs',
+  'http://max.etopchieva.students.nomoredomains.sbs',
   'http://localhost:3000',
   'http://localhost:3001',
 ];
