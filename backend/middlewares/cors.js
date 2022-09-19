@@ -1,19 +1,6 @@
-// module.exports.corsConfig = {
-//   origin: [
-//     'https://etopchieva.students.nomoredomains.sbs',
-//     'http://etopchieva.students.nomoredomains.sbs',
-//     'http://localhost:3000',
-//     'http://localhost:3002',
-//   ],
-//   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-//   preflightContinue: true,
-//   optionsSuccessStatus: 204,
-//   allowedHeaders: ['Content-Type', 'Origin', 'Referer', 'Accept', 'Authorization'],
-//   credentials: true,
-// };
 const allowedCors = [
-  'https://max.etopchieva.students.nomoredomains.sbs',
-  'http://max.etopchieva.students.nomoredomains.sbs',
+  'https://max.etopchieva.nomoredomains.sbs',
+  'http://max.etopchieva.nomoredomains.sbs',
   'http://localhost:3000',
   'http://localhost:3001',
 ];

@@ -90,7 +90,7 @@ class Api {
   }
   
   export const api = new Api({
-    baseUrl: 'https://api.max.etopchieva.students.nomoredomains.sbs',
+    baseUrl: 'https://api.max.etopchieva.nomoredomains.sbs',
     headers: {
       'Content-Type': 'application/json',
       "Authorization" : `Bearer ${localStorage.getItem('token')}`
