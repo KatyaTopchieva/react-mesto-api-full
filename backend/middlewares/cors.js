@@ -1,6 +1,6 @@
 const allowedCors = [
-  'https://max.etopchieva.nomoredomains.sbs',
-  'http://max.etopchieva.nomoredomains.sbs',
+  'https://etopchieva.students.nomoredomains.sbs',
+  'http://etopchieva.students.nomoredomains.sbs',
   'http://localhost:3000',
   'http://localhost:3001',
 ];

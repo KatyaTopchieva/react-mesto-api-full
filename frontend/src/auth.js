@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.max.etopchieva.students.nomoredomains.sbs';
+export const BASE_URL = 'https://api.etopchieva.students.nomoredomains.sbs';
 
 export const register = (password, email) => {
   return fetch(`${BASE_URL}/signup`, {
